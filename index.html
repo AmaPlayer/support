@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Support – Get Help & Contact Us | AmaPlayer</title>
+	<meta name="description" content="Need help with AmaPlayer? Contact our support team, browse FAQs, or submit a query. We're here to help athletes, scouts, coaches, and organizations.">
+	<meta name="keywords" content="AmaPlayer support, contact AmaPlayer, help center, sports platform support, athlete help, AmaPlayer FAQ">
+	<link rel="canonical" href="https://support.amaplayer.com">
+	<meta property="og:title" content="Support – Get Help & Contact Us | AmaPlayer">
+	<meta property="og:description" content="Need help? Contact our support team or browse FAQs. We're here to help.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://support.amaplayer.com">
+	<meta property="og:image" content="https://amaplayer.com/images/logo3.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="AmaPlayer Support – Get Help">
+	<meta name="twitter:description" content="Contact our support team or browse FAQs. We're here to help.">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "ContactPage",
+		"name": "AmaPlayer Support",
+		"description": "Get help with AmaPlayer. Contact support, browse FAQs, or submit a query.",
+		"url": "https://support.amaplayer.com",
+		"mainEntity": {
+			"@type": "Organization",
+			"name": "AmaPlayer",
+			"email": "support@amaplayer.com",
+			"url": "https://amaplayer.com"
+		}
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+			{
+				"@type": "Question",
+				"name": "What is AmaPlayer?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "AmaPlayer is India's sports talent discovery platform where athletes can create profiles, upload performance videos, earn scout scores, and get discovered by verified scouts, coaches, and organizations."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "Is AmaPlayer free for athletes?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Yes! Creating an athlete profile, uploading videos, and participating in events is completely free. AmaPlayer is built to give every athlete an equal chance to be discovered."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "How does the Scout Score work?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "The Scout Score is calculated based on your consistency, video uploads, community engagement, and verified achievements. It rewards athletes who show up and put in the work daily — not just highlight reels."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "How can scouts and organizations find athletes?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Scouts and organizations can browse athlete profiles filtered by sport, location, and scout score. They can watch performance videos, review achievements, and contact athletes directly through the app."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "How do I register my organization or academy?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Download the AmaPlayer app, register as an organization, and complete your profile with your facilities, sports offered, and programs. Once verified, you'll be listed on our platform."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "How do I report a bug or issue?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Use the contact form on the support page to report any bugs or issues. Please include as much detail as possible — your device, what you were doing, and screenshots if possible. We'll investigate and respond within 24 hours."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "Is my data safe on AmaPlayer?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Yes. We take data privacy seriously. Your personal information is encrypted and never shared without your consent. Only verified scouts and organizations can view athlete profiles."
+				}
+			}
+		]
+	}
+	</script>
+	<link rel="icon" type="image/x-icon" href="https://amaplayer.com/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://amaplayer.com/images/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://amaplayer.com/images/apple-touch-icon.png">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<style>
+		.support-form {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		.form-group {
+			margin-bottom: 1.5rem;
+		}
+
+		.form-group label {
+			display: block;
+			margin-bottom: 0.5rem;
+			color: var(--color-white);
+			font-weight: 600;
+			font-size: 0.95rem;
+		}
+
+		.form-group input,
+		.form-group textarea,
+		.form-group select {
+			width: 100%;
+			padding: 0.85rem 1rem;
+			background: rgba(255, 255, 255, 0.05);
+			border: 1px solid rgba(255, 255, 255, 0.15);
+			border-radius: 8px;
+			color: var(--color-white);
+			font-size: 1rem;
+			font-family: var(--font-body);
+			transition: border-color 0.3s, box-shadow 0.3s;
+		}
+
+		.form-group input:focus,
+		.form-group textarea:focus,
+		.form-group select:focus {
+			outline: none;
+			border-color: var(--color-primary);
+			box-shadow: 0 0 0 3px rgba(204, 255, 0, 0.1);
+		}
+
+		.form-group textarea {
+			min-height: 150px;
+			resize: vertical;
+		}
+
+		.form-group select option {
+			background: var(--color-bg-dark);
+			color: var(--color-white);
+		}
+
+		.form-group .required {
+			color: #ff6b6b;
+		}
+
+		.form-success {
+			display: none;
+			background: rgba(76, 217, 100, 0.1);
+			border: 1px solid #4cd964;
+			border-radius: 8px;
+			padding: 1.5rem;
+			text-align: center;
+			margin-top: 1.5rem;
+		}
+
+		.form-success i {
+			font-size: 2rem;
+			color: #4cd964;
+			margin-bottom: 0.5rem;
+			display: block;
+		}
+
+		.form-error {
+			display: none;
+			background: rgba(255, 107, 107, 0.1);
+			border: 1px solid #ff6b6b;
+			border-radius: 8px;
+			padding: 1rem;
+			text-align: center;
+			margin-top: 1rem;
+			color: #ff6b6b;
+		}
+
+		.faq-item {
+			background: rgba(255, 255, 255, 0.03);
+			border: 1px solid rgba(255, 255, 255, 0.08);
+			border-radius: 8px;
+			margin-bottom: 1rem;
+			overflow: hidden;
+			transition: border-color 0.3s;
+		}
+
+		.faq-item:hover {
+			border-color: rgba(255, 255, 255, 0.15);
+		}
+
+		.faq-question {
+			padding: 1.25rem 1.5rem;
+			cursor: pointer;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-weight: 600;
+			color: var(--color-white);
+		}
+
+		.faq-question i {
+			transition: transform 0.3s;
+			color: var(--color-primary);
+		}
+
+		.faq-item.active .faq-question i {
+			transform: rotate(180deg);
+		}
+
+		.faq-answer {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.3s ease-out;
+			padding: 0 1.5rem;
+		}
+
+		.faq-item.active .faq-answer {
+			max-height: 300px;
+			padding: 0 1.5rem 1.25rem;
+		}
+
+		.faq-answer p {
+			color: var(--color-text-muted);
+			line-height: 1.7;
+		}
+
+		.contact-card {
+			text-align: center;
+			padding: 2rem;
+		}
+
+		.contact-card i {
+			font-size: 2rem;
+			margin-bottom: 1rem;
+			display: block;
+		}
+
+		.honeypot {
+			position: absolute;
+			left: -9999px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<header class="main-header flex-center" id="mainHeader">
+		<div class="container flex-between">
+			<div class="logo">
+				<a href="index.html" class="logo-link flex-center">
+					<img src="images/logo3.png" alt="AmaPlayer Logo" width="44" height="44" class="logo-img">
+					<span class="logo-text">AMA<span class="logo-highlight">PLAYER</span></span>
+				</a>
+			</div>
+			<nav class="nav-links desktop-only">
+				<a href="index.html" class="nav-item">Home</a>
+				<a href="for-athletes.html" class="nav-item">For Athletes</a>
+				<a href="for-scouts.html" class="nav-item">For Scouts</a>
+				<a href="events.html" class="nav-item">Events & Prizes</a>
+				<a href="organizations.html" class="nav-item">Organizations</a>
+				<a href="coaches.html" class="nav-item">Coaches</a>
+				<a href="stories.html" class="nav-item">Stories</a>
+				<a href="about.html" class="nav-item">About</a>
+			</nav>
+			<div class="auth-buttons flex">
+				<a href="https://play.google.com/store/apps/details?id=com.amaplayer.app&hl=en_IN" target="_blank" class="store-badge-sm"><i class="fab fa-google-play"></i> Google Play</a>
+				<a href="https://apps.apple.com/in/app/amaplayer/id6757383087" target="_blank" class="store-badge-sm store-badge-apple"><i class="fab fa-apple"></i> App Store</a>
+			</div>
+			<div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+		</div>
+	</header>
+
+	<!-- Hero -->
+	<section class="hero-wrapper" style="min-height: 50vh;">
+		<div style="position: absolute; top:0; left:0; width:100%; height:100%; background: var(--gradient-hero); z-index: 0;"></div>
+		<div class="container hero-content text-center">
+			<p class="reveal-on-scroll" style="font-size: 0.85rem; color: var(--color-primary); font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1rem;">Support Center</p>
+			<h1 class="reveal-on-scroll stagger-1" style="font-size: clamp(2.5rem, 5vw, 3.5rem);">How Can We <span class="hero-highlight">Help You?</span></h1>
+			<p class="reveal-on-scroll stagger-2" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: #e6f1ff;">
+				Browse our FAQs or send us a message. We typically respond within 24 hours.
+			</p>
+		</div>
+	</section>
+
+	<!-- Quick Contact Cards -->
+	<section class="section-py" style="padding-top: 3rem; padding-bottom: 3rem;">
+		<div class="container">
+			<div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+				<div class="glass-card contact-card reveal-on-scroll">
+					<i class="fas fa-envelope" style="color: var(--color-primary);"></i>
+					<h4>Email Us</h4>
+					<p style="margin-bottom: 0.5rem;">For general queries and support</p>
+					<a href="mailto:support@amaplayer.com" style="color: var(--color-primary); font-weight: 600;">support@amaplayer.com</a>
+				</div>
+				<div class="glass-card contact-card reveal-on-scroll">
+					<i class="fas fa-clock" style="color: var(--color-secondary);"></i>
+					<h4>Response Time</h4>
+					<p style="margin-bottom: 0.5rem;">We aim to respond within</p>
+					<span style="color: var(--color-secondary); font-weight: 600; font-size: 1.2rem;">24 Hours</span>
+				</div>
+				<div class="glass-card contact-card reveal-on-scroll">
+					<i class="fab fa-instagram" style="color: var(--color-primary);"></i>
+					<h4>Social Media</h4>
+					<p style="margin-bottom: 0.5rem;">DM us on Instagram</p>
+					<a href="https://www.instagram.com/ama_player_official/" target="_blank" style="color: var(--color-primary); font-weight: 600;">@ama_player_official</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ Section -->
+	<section class="section-py" style="background: var(--color-bg-darker);">
+		<div class="container">
+			<div class="text-center mb-4 reveal-on-scroll">
+				<h2>Frequently Asked <span class="hero-highlight">Questions</span></h2>
+			</div>
+			<div style="max-width: 800px; margin: 0 auto;">
+				<div class="faq-item reveal-on-scroll">
+					<div class="faq-question">
+						<span>What is AmaPlayer?</span>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<div class="faq-answer">
+						<p>AmaPlayer is India's sports talent discovery platform where athletes can create profiles, upload performance videos, earn scout scores, and get discovered by verified scouts, coaches, and organizations.</p>
+					</div>
+				</div>
+				<div class="faq-item reveal-on-scroll">
+					<div class="faq-question">
+						<span>Is AmaPlayer free for athletes?</span>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<div class="faq-answer">
+						<p>Yes! Creating an athlete profile, uploading videos, and participating in events is completely free. AmaPlayer is built to give every athlete an equal chance to be discovered.</p>
+					</div>
+				</div>
+				<div class="faq-item reveal-on-scroll">
+					<div class="faq-question">
+						<span>How does the Scout Score work?</span>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<div class="faq-answer">
+						<p>The Scout Score is calculated based on your consistency, video uploads, community engagement, and verified achievements. It rewards athletes who show up and put in the work daily — not just highlight reels. <a href="for-scouts.html" style="color: var(--color-primary);">Learn more about Scout Scores</a>.</p>
+					</div>
+				</div>
+				<div class="faq-item reveal-on-scroll">
+					<div class="faq-question">
+						<span>How can scouts and organizations find athletes?</span>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<div class="faq-answer">
+						<p>Scouts and organizations can browse athlete profiles filtered by sport, location, and scout score. They can watch performance videos, review achievements, and contact athletes directly through the app. <a href="for-scouts.html" style="color: var(--color-primary);">Learn more</a>.</p>
+					</div>
+				</div>
+				<div class="faq-item reveal-on-scroll">
+					<div class="faq-question">
+						<span>How do I register my organization or academy?</span>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<div class="faq-answer">
+						<p>Download the AmaPlayer app, register as an organization, and complete your profile with your facilities, sports offered, and programs. Once verified, you'll be listed on our platform. <a href="organizations.html" style="color: var(--color-primary);">Learn more about organizations</a>.</p>
+					</div>
+				</div>
+				<div class="faq-item reveal-on-scroll">
+					<div class="faq-question">
+						<span>How do I report a bug or issue?</span>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<div class="faq-answer">
+						<p>Use the contact form below to report any bugs or issues. Please include as much detail as possible — your device, what you were doing, and screenshots if possible. We'll investigate and respond within 24 hours.</p>
+					</div>
+				</div>
+				<div class="faq-item reveal-on-scroll">
+					<div class="faq-question">
+						<span>Is my data safe on AmaPlayer?</span>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<div class="faq-answer">
+						<p>Yes. We take data privacy seriously. Your personal information is encrypted and never shared without your consent. Only verified scouts and organizations can view athlete profiles. Read our <a href="privacy-policy.html" style="color: var(--color-primary);">Privacy Policy</a> for full details.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Form Section -->
+	<section class="section-py">
+		<div class="container">
+			<div class="text-center mb-4 reveal-on-scroll">
+				<h2>Send Us a <span class="hero-highlight">Message</span></h2>
+				<p style="max-width: 600px; margin: 0 auto; color: var(--color-text-muted);">
+					Can't find what you're looking for? Fill out the form below and our team will get back to you via email.
+				</p>
+			</div>
+
+			<form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="support-form">
+				<!-- Web3Forms Access Key - REPLACE with your actual key from https://web3forms.com -->
+				<input type="hidden" name="access_key" value="dc2c3f84-f40c-4b05-9673-f1b96ec890c1">
+				<input type="hidden" name="subject" value="New Support Query - AmaPlayer">
+				<input type="hidden" name="from_name" value="AmaPlayer Support Form">
+
+				<!-- Honeypot for bot protection -->
+				<div class="honeypot">
+					<input type="text" name="botcheck" id="website" tabindex="-1" autocomplete="off">
+				</div>
+
+				<div class="form-group">
+					<label for="name">Full Name <span class="required">*</span></label>
+					<input type="text" id="name" name="name" placeholder="Enter your full name" required>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email Address <span class="required">*</span></label>
+					<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+				</div>
+
+				<div class="form-group">
+					<label for="category">Category</label>
+					<select id="category" name="category">
+						<option value="General Query">General Query</option>
+						<option value="Bug Report">Bug Report</option>
+						<option value="Account Issue">Account Issue</option>
+						<option value="Athlete Profile">Athlete Profile Help</option>
+						<option value="Scout/Organization">Scout / Organization Query</option>
+						<option value="Coach Registration">Coach Registration</option>
+						<option value="Event Inquiry">Event Inquiry</option>
+						<option value="Partnership">Partnership / Collaboration</option>
+						<option value="Feedback">Feedback / Suggestion</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="message">Message <span class="required">*</span></label>
+					<textarea id="message" name="message" placeholder="Describe your query in detail..." required></textarea>
+				</div>
+
+				<button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+					<i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i>Send Message
+				</button>
+
+				<div id="form-success" class="form-success">
+					<i class="fas fa-check-circle"></i>
+					<h4 style="color: #4cd964; margin-bottom: 0.5rem;">Message Sent!</h4>
+					<p style="margin-bottom: 0;">Thank you for reaching out. We'll get back to you within 24 hours at the email address you provided.</p>
+				</div>
+
+				<div id="form-error" class="form-error">
+					<i class="fas fa-exclamation-circle" style="margin-right: 0.5rem;"></i>
+					<span>Something went wrong. Please try again or email us directly at <a href="mailto:support@amaplayer.com" style="color: #ff6b6b;">support@amaplayer.com</a></span>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<!-- Still Need Help CTA -->
+	<section class="section-py" style="background: var(--color-bg-darker);">
+		<div class="container text-center">
+			<h2 class="reveal-on-scroll">Still Need <span class="hero-highlight">Help?</span></h2>
+			<p class="reveal-on-scroll" style="max-width: 600px; margin: 1rem auto 2rem; color: var(--color-text-muted);">
+				Reach out to us directly via email or connect with us on social media. We're always happy to help.
+			</p>
+			<div class="reveal-on-scroll" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+				<a href="mailto:support@amaplayer.com" class="btn btn-primary"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>Email Support</a>
+				<a href="https://www.instagram.com/ama_player_official/" target="_blank" class="btn btn-outline"><i class="fab fa-instagram" style="margin-right: 0.5rem;"></i>Instagram</a>
+				<a href="https://x.com/Ama__Player" target="_blank" class="btn btn-outline"><i class="fab fa-x-twitter" style="margin-right: 0.5rem;"></i>Twitter</a>
+				<a href="https://www.facebook.com/profile.php?id=61581834967996" target="_blank" class="btn btn-outline"><i class="fab fa-facebook" style="margin-right: 0.5rem;"></i>Facebook</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="main-footer">
+		<div class="container">
+			<div class="grid footer-grid-5" style="text-align: left; gap: 2rem; padding-bottom: 3rem;">
+				<div>
+					<h4 style="color: var(--color-white);">AmaPlayer</h4>
+					<p style="font-size: 0.9rem;">India's sports talent discovery platform connecting athletes with scouts, coaches, and organizations.</p>
+				</div>
+				<div>
+					<h4>For Athletes</h4>
+					<ul style="opacity: 0.7; font-size: 0.9rem; line-height: 2;">
+						<li><a href="for-athletes.html">Build Your Profile</a></li>
+						<li><a href="for-scouts.html">How Scout Scores Work</a></li>
+						<li><a href="events.html">Browse Events</a></li>
+						<li><a href="stories.html">Read Athlete Stories</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4>For Scouts & Orgs</h4>
+					<ul style="opacity: 0.7; font-size: 0.9rem; line-height: 2;">
+						<li><a href="for-scouts.html">Discover Talent</a></li>
+						<li><a href="organizations.html">Partner With Us</a></li>
+						<li><a href="coaches.html">Find Coaches</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4>Company</h4>
+					<ul style="opacity: 0.7; font-size: 0.9rem; line-height: 2;">
+						<li><a href="about.html">About AmaPlayer</a></li>
+						<li><a href="stories.html">Success Stories</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4>Support</h4>
+					<ul style="opacity: 0.7; font-size: 0.9rem; line-height: 2;">
+						<li><a href="support.html">Help Center</a></li>
+						<li><a href="privacy-policy.html">Privacy Policy</a></li>
+						<li><a href="terms.html">Terms of Service</a></li>
+					</ul>
+				</div>
+			</div>
+			<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+				<p style="font-size: 0.8rem; opacity: 0.5;">&copy; 2026 AmaPlayer. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="assets/js/main.js"></script>
+	<script>
+		// FAQ Toggle
+		document.querySelectorAll('.faq-question').forEach(question => {
+			question.addEventListener('click', () => {
+				const item = question.parentElement;
+				const isActive = item.classList.contains('active');
+
+				// Close all
+				document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+				// Open clicked if it wasn't active
+				if (!isActive) {
+					item.classList.add('active');
+				}
+			});
+		});
+
+		// Contact Form - Web3Forms submission
+		const contactForm = document.getElementById('contact-form');
+		if (contactForm) {
+			contactForm.addEventListener('submit', async (e) => {
+				e.preventDefault();
+
+				const submitBtn = document.getElementById('submit-btn');
+				const successMsg = document.getElementById('form-success');
+				const errorMsg = document.getElementById('form-error');
+				const originalBtnHTML = submitBtn.innerHTML;
+
+				// Honeypot check
+				if (document.getElementById('website').value) return;
+
+				// Rate limiting
+				const lastSubmission = localStorage.getItem('last_support_submission');
+				const now = Date.now();
+				if (lastSubmission && (now - lastSubmission < 60000)) {
+					alert('Please wait a minute before sending another message.');
+					return;
+				}
+
+				// Submit
+				submitBtn.disabled = true;
+				submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" style="margin-right: 0.5rem;"></i>Sending...';
+				successMsg.style.display = 'none';
+				errorMsg.style.display = 'none';
+
+				try {
+					const formData = new FormData(contactForm);
+					const response = await fetch('https://api.web3forms.com/submit', {
+						method: 'POST',
+						body: formData
+					});
+
+					const result = await response.json();
+
+					if (result.success) {
+						successMsg.style.display = 'block';
+						contactForm.reset();
+						localStorage.setItem('last_support_submission', Date.now());
+						submitBtn.innerHTML = '<i class="fas fa-check" style="margin-right: 0.5rem;"></i>Sent!';
+
+						setTimeout(() => {
+							submitBtn.disabled = false;
+							submitBtn.innerHTML = originalBtnHTML;
+							successMsg.style.display = 'none';
+						}, 5000);
+					} else {
+						throw new Error(result.message || 'Submission failed');
+					}
+				} catch (error) {
+					errorMsg.style.display = 'block';
+					submitBtn.disabled = false;
+					submitBtn.innerHTML = originalBtnHTML;
+
+					setTimeout(() => {
+						errorMsg.style.display = 'none';
+					}, 5000);
+				}
+			});
+		}
+	</script>
+</body>
+
+</html>

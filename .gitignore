@@ -1,0 +1,9 @@
+# Folders to ignore
+.claude/
+.wrangler/
+node_modules/
+SEO/
+
+# Files to ignore
+.env
+
